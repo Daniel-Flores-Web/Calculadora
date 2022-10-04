@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body {
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 641.7px;
+  background: #1B1923;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  border-radius: 15px;
+  padding: 20px;
+}
+.container .display {
+  background: #D7DAE0;
+  border-radius: 10px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.container .display .resultado {
+  padding-right: 30px;
+  font-size: 50px;
+}
+.container .container-operation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  cursor: pointer;
+}
+.container .container-operation .operation {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-operation #igual {
+  border-radius: 50px;
+  grid-column: 4/5;
+  grid-row: 4/6;
+  background: #F9C096;
+}
+.container .container-operation #number1, .container .container-operation #number2, .container .container-operation #number3, .container .container-operation #number4, .container .container-operation #number5, .container .container-operation #number6, .container .container-operation #number7, .container .container-operation #number8, .container .container-operation #number9, .container .container-operation #cero {
+  background: #B1E3AD;
+}
+.container .container-operation #power {
+  background: #E38C8F;
+}
+.container .container-operation #multiplicacion, .container .container-operation #resta, .container .container-operation #suma, .container .container-operation #division, .container .container-operation #punto-decimal, .container .container-operation #cero-cero {
+  background: #A4B9EF;
+}
+.container .container-operation #operation-c {
+  background: #E5B4E2;
+}/*# sourceMappingURL=style.css.map */
