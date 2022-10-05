@@ -10,4 +10,3 @@ document.getElementById('suma').addEventListener('click',() => {
 document.getElementById('operation-c').addEventListener('click',() => {
     document.getElementById('display').textContent = 0;
 });
-console.log(typeof document.getElementById('display').textContent)
